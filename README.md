@@ -29,13 +29,15 @@ This module manages [Twemproxy](http://www.github.com/twitter/twemproxy) package
 </pre>
 
 ### Creating a resource to monitor
-
+<pre>
 twemproxy::resource::monit {
     'twemprodweb':
       country   => es,
       port      => '22114',
       statsport => '21214';
   }
+</pre>
+
 ## Dependencies
 
 * `puppet-monit`: Ensure monit is installed and configured
