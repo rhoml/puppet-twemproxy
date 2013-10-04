@@ -8,7 +8,7 @@ define twemproxy::resource::nutcracker (
   $members              = '',
   $nutcracker_hash      = 'fnv1a_64',
   $pid_dir              = '/var/run/nutcracker',
-  $port                 = '22111',
+  $redis_port           = '22111',
   $redis                = true,
   $server_retry_timeout = '2000',
   $server_failure_limit = '3',
